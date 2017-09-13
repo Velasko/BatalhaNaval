@@ -31,7 +31,7 @@ def Start():
 
     sombra = (125, 125, 125, 120)
     Fundo = (2, 100, 100)
-    LetterColor = (255, 255, 255)
+    LetterColor = (255, 255, 255, 000)
 
     barcos = {'portaviao' : BoatClass.barco('Porta Avião', 5, 'portavioes.png', *(9, 0)),
               'destroyer' : BoatClass.barco('Destroyer', 4, 'destroyer.png', *(1, 3)),
@@ -51,7 +51,6 @@ def Start():
     if height >=950:
         G = 0
     else: G = 1
-    G = 1
 
     connection.send(G)
     Ge = connection.recv()

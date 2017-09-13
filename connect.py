@@ -7,7 +7,7 @@ def conn():
         while not working:
             try:
                 working = True
-                server = Listener(('', 25000))
+                server = Listener(('', 28465))
             except OSError:
                 working = False
                 atFirst = False
@@ -21,7 +21,7 @@ def conn():
             traceback.print_exc()
     else:
         server = None
-        IP = '192.168.1.12:25000'
+        IP = 'lipe.velasco.one:28465'
         foi = False
         while not foi:
             foi = True
@@ -31,6 +31,7 @@ def conn():
                 connection = Client((IP, porta))
             except Exception:#URLError:
                 IP = input('Qual o IP do Host?\n -> ')
+                foi = False
 
     return(connection, server)
 
