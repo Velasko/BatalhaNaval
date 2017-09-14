@@ -34,6 +34,3 @@ def conn():
                 foi = False
 
     return(connection, server)
-
-
-#hehe 26.1.17

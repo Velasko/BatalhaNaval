@@ -222,5 +222,3 @@ def check(x, y, shots, G):
 if __name__ == '__main__':
     import Jogo
     Jogo.Start()
-
-#hehe 26.1.17

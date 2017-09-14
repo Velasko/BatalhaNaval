@@ -58,4 +58,3 @@ class shot():
 if __name__ == '__main__':
     import Jogo
     Jogo.Start()
-#hehe 23.1.17
